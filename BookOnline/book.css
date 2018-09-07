@@ -19,7 +19,7 @@ html, body {
     border-bottom: 4px solid lightgrey;
     justify-content: space-between;
     height: 130px;
-    padding: 0 30px;
+    padding: 0px 30px;
     margin: 0 30px;
     background: #fff;
     position: relative;
@@ -54,7 +54,7 @@ text-transform: uppercase;
     color: inherit;
 }
 
-#right-nav li:last-child{
+#right-nav li:first-child{
     color: #9fcfce;
         
         }
@@ -70,24 +70,41 @@ color: #111;
 
     /* About Me */
 
-.aboutme {
+.booking {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 0 30px 30px 30px;
 
 }
 
-.about-photo img {
-    width: 570px;
-    height: 400px;
-    padding: 30px 0 0 20px;
+.about-photo {
+    padding-top: 40px;
 }
 
-.about-text {
+.about-photo h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    color: #9fcfce;
+}
+.about-photo p {
+    font-size: 15px;
+    font-family: 'Lato';
+    padding-bottom: 20px;
+    color: #616161;
+}
+
+.about-photo p span {
+    color: #000;
+    font-weight: bolder;
+}
+
+.booking-text {
     padding: 15px;
+
 }
 
-.about-text h2 {
+.booking-text h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -100,7 +117,7 @@ color: #111;
 
 }
 
-.about-text p {
+.booking-text p {
     font-family: 'lato';
     line-height: 1.8em;
     font-size: 15px;
@@ -108,6 +125,42 @@ color: #111;
     font-weight: 300;
     padding: 10px 0 10px 0;
 
+}
+
+
+
+.booking-link a{
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    box-sizing: content-box;
+    width: 210px;
+    height: 80px;
+    background-color: rgb(159, 207, 206);
+    background-image: url(../IMG/stylebutton.png);
+    background-repeat: no-repeat;
+    background-size: 168px 36px;
+    background-position: 16px 33px; 
+    padding-top: 7px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+  }
+
+  #map img {
+    width: 100%;
+    height: 450px;
+  }
+
+  #map img:hover {
+    opacity: 0.7;
 }
 
 
@@ -150,7 +203,7 @@ color: #111;
         width: 300px;
         padding: 12px 0 7px 30px;
     }
-    .aboutme {
+    .booking {
         display: grid;
         grid-template-columns: 50% 50%;
         padding: 0 30px 30px 30px;
@@ -202,7 +255,7 @@ color: #111;
             margin-top: 50%;
         }
         
-        .about-text {
+        .booking-text {
             padding: 15px;
             margin-top: 20px;
         }
@@ -253,7 +306,7 @@ color: #111;
         
      }
 
-     .aboutme {
+     .booking {
         display: grid;
         grid-template-columns: 1fr;
     
@@ -265,12 +318,12 @@ color: #111;
         padding: 30px 0 0 20px;
     }
     
-    .about-text {
+    .booking-text {
         padding: 15px;
         
     }
     
-    .about-text h2 {
+    .booking-text h2 {
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
         text-transform: uppercase;
@@ -284,7 +337,7 @@ color: #111;
     
     }
     
-    .about-text p {
+    .booking-text p {
         font-family: 'lato';
 
         font-size: 15spx;
